@@ -1,0 +1,31 @@
+{
+	"$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"workspaceName": {
+			"value": "annunes2023-synapsewsflavor1gh"
+		},
+		"annunes2023-synapsewsflavor1gh-WorkspaceDefaultSqlServer_connectionString": {
+			"value": "Integrated Security=False;Encrypt=True;Connection Timeout=30;Data Source=tcp:annunes2023-synapsewsflavor1gh.sql.azuresynapse.net,1433;Initial Catalog=@{linkedService().DBName}"
+		},
+		"Pipeline 1_properties_0_typeProperties": {
+			"value": ""
+		},
+		"AutoResolveIntegrationRuntime_properties_typeProperties_computeProperties": {
+			"value": {
+				"location": "AutoResolve",
+				"dataFlowProperties": {
+					"computeType": "General",
+					"coreCount": 8,
+					"timeToLive": 0
+				}
+			}
+		},
+		"SQL script 1_properties_content_currentConnection_databaseName": {
+			"value": ""
+		},
+		"SQL script 1_properties_content_currentConnection_poolName": {
+			"value": ""
+		}
+	}
+}
